@@ -1,3 +1,9 @@
+# Este módulo define la clase Cell, que representa una celda individual dentro del mapa del juego.
+# Cada celda tiene una posición absoluta, dimensiones específicas y puede contener una pieza.
+# Para facilitar el desarrollo sin depender del renderizado visual, se puede desactivar temporalmente
+# el dibujo del rectángulo azul en el método update. Esto permite mantener la lógica de colisiones y
+# estructura del mapa sin generar errores gráficos si la superficie de destino no está disponible.
+
 import pygame
 
 class Cell(pygame.sprite.Sprite):

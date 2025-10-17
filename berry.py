@@ -1,3 +1,9 @@
+# Este módulo define la clase Berry, que representa los objetos recolectables en el juego.
+# Cada instancia puede ser un punto normal o un potenciador, y se dibuja como un círculo en pantalla.
+# Para evitar errores gráficos durante el desarrollo, se puede comentar la línea de dibujo en el método update
+# si no se desea renderizar visualmente o si hay problemas con la superficie de destino.
+# Esta clase sigue siendo funcional para pruebas de colisiones y lógica de juego, incluso sin renderizado.
+
 import pygame
 
 from settings import CHAR_SIZE, PLAYER_SPEED
