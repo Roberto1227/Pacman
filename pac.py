@@ -6,7 +6,7 @@ from animation import import_sprite
 class Pac(pygame.sprite.Sprite):
     def __init__(self, row, col):
         super().__init__()
-        # resolve sound path relative to this module
+        # sonod
         self._asset_dir = Path(__file__).resolve().parent / "assets"
         self.walking_sound = pygame.mixer.Sound(str(self._asset_dir / 'sounds' / 'pacman-waka-waka.mp3'))
         self.walking_sound.set_volume(0.2)
@@ -14,7 +14,7 @@ class Pac(pygame.sprite.Sprite):
         self.abs_x = (row * CHAR_SIZE)
         self.abs_y = (col * CHAR_SIZE)
   
-        # pac animation
+        # animaciones de pacaman
         self._import_character_assets()
         self.frame_index = 0
         self.animation_speed = 0.5
@@ -31,14 +31,14 @@ class Pac(pygame.sprite.Sprite):
         self.direction = (0, 0)
     
        
-        # pac status
+        # estado de pavman
         self.status = "idle"
         self.life = 3
         self.pac_score = 0
   
 
 
-    # gets all the image needed for animating specific player action
+    # imagnes de animacion de pacman
     def _import_character_assets(self):
         character_path = str(self._asset_dir / "pac")
         self.animations = {

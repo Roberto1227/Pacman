@@ -35,7 +35,7 @@ class Display:
         score = self.font.render(f'{score}', True, self.text_color)
         self.screen.blit(score, (score_x * 2, (HEIGHT + (CHAR_SIZE // 2))))
 
-    # add game over message
+    # Mensaje de game over
     def game_over(self):
         message = self.game_over_font.render(f'GAME OVER!!', True, pygame.Color("chartreuse"))
         instruction = self.font.render(f'Press "R" to Restart', True, pygame.Color("aqua"))

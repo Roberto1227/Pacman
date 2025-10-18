@@ -17,7 +17,7 @@ class Ghost(pygame.sprite.Sprite):
         self.move_directions = [(-1,0), (0,-1), (1,0), (0,1)]
 
         self.moving_dir = "up"
-        # resolve asset directory relative to this module
+       
         self._asset_dir = Path(__file__).resolve().parent / "assets" / "ghosts" / color
         self.img_name = f'{self.moving_dir}.png'
         self.image = pygame.image.load(str(self._asset_dir / self.img_name))

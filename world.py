@@ -1,6 +1,5 @@
 import pygame
 import time
-
 from settings import HEIGHT, WIDTH, NAV_HEIGHT, CHAR_SIZE, MAP, PLAYER_SPEED
 from pac import Pac
 from cell import Cell
@@ -11,7 +10,6 @@ from display import Display
 class World:
 	def __init__(self, screen):
 		self.screen = screen
-
 		self.player = pygame.sprite.GroupSingle()
 		self.ghosts = pygame.sprite.Group()
 		self.walls = pygame.sprite.Group()
