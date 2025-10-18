@@ -1,0 +1,2 @@
+Requeriminetos:
+Libreria de PyGame: pip install pygame
