@@ -29,7 +29,7 @@ class World:
 
 	
 	def _generate_world(self):
-		# renders obstacle from the MAP table
+		# renders obstacle from the MAP table 
 		for y_index, col in enumerate(MAP):
 			for x_index, char in enumerate(col):
 				if char == "1":	# for walls

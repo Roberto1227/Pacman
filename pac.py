@@ -30,6 +30,7 @@ class Pac(pygame.sprite.Sprite):
         self.keys = {'left': pygame.K_LEFT, 'right': pygame.K_RIGHT, 'up': pygame.K_UP, 'down': pygame.K_DOWN}
         self.direction = (0, 0)
     
+       
         # pac status
         self.status = "idle"
         self.life = 3
